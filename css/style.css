@@ -1,0 +1,154 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 ,h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-weight: 400;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+   object-fit: cover; 
+}
+
+*:focus {outline: none}
+
+button {
+    cursor: pointer;
+}
+
+
+.container {
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #333333;
+}
+
+
+.content__buttons {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.content__btn {
+    background-color: transparent;
+    border: 1px solid #33cc00;
+    color: #33cc00;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.content__btn:hover {
+    background-color: #33cc00;
+    color: #fff;
+    
+}
+
+.content__mover-and-time {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: #33CC00;
+}
+
+.content__field {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+}
+
+.field {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #33CC00;
+    position: absolute;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s;
+    color: #33CC00;
+}
+
+.cell:hover {
+    background-color: #33cc00;
+    color: #fff;
+    font-weight: 700;
+}
+
+.field__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.field__btn {
+    background-color: transparent;
+    border: 1px solid #33cc00;
+    color: #33cc00;
+    padding: 5px 10px;
+    transition: all .3s;
+}
+
+.field__btn:hover {
+    background-color: #33cc00;
+    color: #fff;
+    font-weight: 700;
+}
+
+@media(max-width: 370px) {
+    .main {
+        display: block;
+    }
+
+    .content__buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .content__mover-and-time {
+        margin-bottom: 30px;
+    }
+
+    .field__buttons {
+        flex-wrap: wrap;
+    }
+}
